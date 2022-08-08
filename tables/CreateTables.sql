@@ -181,7 +181,7 @@ create table produto(
 
 
 create table log_procedimentos(
-	log_id numeric(18,0) not null,
+	log_id numeric(18,0) not null identity(1,1),
 	error_message varchar(240),
 	error_line int,
 	error_procedure varchar(120),
